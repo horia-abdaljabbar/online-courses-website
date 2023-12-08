@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: #f7f7f8;
+}
+
+.container {
+  width: calc(100% - 160px);
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+/**********************************************header*******************************************/
+
+header {
+  text-transform: capitalize;
+  color: #262626;
+  font-size: 14px;
+  margin-bottom: 121px;
+  border-bottom: 1px solid  #F1F1F3;
+
+}
+
+header .row {
+  gap: 50px;
+  padding: 16px 0 20px 0;
+}
+
+header .logo {
+  width: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header .navbar {
+  flex-grow: 1;
+}
+
+header .navbar-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .navbar-list li {
+  list-style-type: none;
+}
+
+header .navbar-list .home {
+  padding: 12px 20px;
+  background-color: #f1f1f3;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .burger-icon {
+  display: none;
+}
+
+header .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .links a {
+  color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .links .login {
+  color: #fff;
+  background-color: #ff9500;
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+/************************************ hero section*********************************/
+
+.hero {
+  padding:0px 149px;
+  width: fit-content;
+  margin: auto;
+  text-transform: capitalize;
+  color: #262626;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+
+.hero-info::before{
+  content: url(../img/public/line.svg);
+  position: absolute;
+bottom: 260px; 
+ left: 120px;
+}
+
+.hero .hero-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.hero .hero-info .row {
+  padding:12px 12px;
+
+  justify-content: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+border: 1px solid #F1F1F3;
+background: #FCFCFD;
+padding: 12px 24px 12px 12px;
+}
+
+.hero .hero-info .row h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.hero .hero-info h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.hero .hero-info p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.hero .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .links a {
+  background-color: #FFF;
+  border-radius: 6px;
+  color: #262626;
+  padding: 14px 20px;
+}
+.hero .links .explore-link {
+  background-color: #ff9500;
+  color: #FFF;
+}
+
+
+/******************************slider***********************************/
+
+.slider{
+  overflow-x: auto;
+  width:100%;
+}
+.slider .row{
+ padding: 24px 24px;
+  border-radius: 8px;
+border: 1px solid  #F1F1F3;
+background:#FCFCFD;
+overflow-x: auto;
+flex-wrap: nowrap;
+}
+.slider .row  img{
+  padding: 20px 58.55px;
+}
+
+
+/**************************the website img*****************************************/
+
+.website-img{
+  margin-top: 80px;
+  margin-bottom: 130px;
+}
+
+
+.website-img img{
+  width: 100%;
+}
+/************************desktop**************************************/
+@media screen and (min-width: 1195px) and (max-width: 1496px) {
+  body {
+    background-color: teal;
+  }
+  header {
+    font-size: 18px;
+  }
+
+  .container {
+    width: calc(100% - 324px);
+  }
+
+  header .logo {
+    width: 54px;
+  }
+
+  header .navbar-list .home {
+    padding: 14px 24px;
+  }
+
+  header .links .login {
+    padding: 14px 34px;
+  }
+
+  .hero{
+    padding:0 55.5px;
+  }
+
+  .hero-info::before{
+    content: url(../img/public/line.svg);
+    position: absolute;
+  bottom: 260px; 
+   left: 25px;
+  }
+
+  .slider .row {
+    padding: 30px 30px;
+  }
+  .slider .row  img{
+    padding: 30px 70px;
+  }
+  .website-img{
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+}
+
+/******************************others***************************/
+@media screen and (min-width: 581px) and (max-width: 905px) {
+  body {
+    background-color: red;
+  }
+
+  .container {
+    width: calc(100% - 50px);
+  }
+
+  header {
+    margin-bottom:55px;
+  }
+  header .row {
+    gap: 10px;
+  }
+
+  header .logo {
+    width: 40px;
+  }
+  header .navbar-list{
+    gap:5px;
+  }
+  header .navbar-list .home {
+    padding: 10px 18px;
+  }
+
+  header .links {
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 14px 14px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .hero-info::before{
+    content: url(../img/public/line.svg);
+    position: absolute;
+  bottom: 230px; 
+left: 0px;  
+}
+
+
+  .hero .hero-info .row h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .hero .hero-info .row img{
+    width:40px;
+  }
+  
+  .hero .hero-info h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .hero .hero-info p {
+    font-size: 14px;
+  }
+  .website-img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+}
+/************************mobile devices*******************************/
+@media screen and (max-width: 580px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+  body {
+    background-color: aqua;
+  }
+
+  header {
+    margin-bottom: 51px;
+  }
+  
+  header .row {
+    gap: 0px;
+  }
+
+  header .logo {
+    width: 25px;
+  }
+
+  header .links {
+    gap: 10px;
+  }
+  header .burger-icon {
+    display: block;
+  }
+
+  header .navbar {
+    display: none;
+  }
+  .hero {
+    padding: 14px 14px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .hero-info::before{
+    content: url(../img/public/line.svg);
+    position: absolute;
+  bottom: 236px; 
+   left:0px;
+  }
+
+  .hero .hero-info .row h1 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .hero .hero-info .row img{
+    width:40px;
+  }
+  
+  .hero .hero-info h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .hero .hero-info p {
+    font-size: 14px;
+  }
+
+  .slider .row {
+    padding: 10px 10px;
+  }
+  .slider .row  img{
+    padding: 20px 30px;
+  }
+  .website-img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 383px) and (max-width: 568px)
+{
+  .hero-info::before{
+    content: url(../img/public/line.svg);
+    position: absolute;
+  bottom: 260px; 
+   left:0px;
+  }
+}
+@media screen and (max-width: 383px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+  body {
+    background-color: aqua;
+  }
+
+  header {
+    margin-bottom: 51px;
+  }
+  
+  header .row {
+    gap: 0px;
+  }
+
+  header .logo {
+    width: 25px;
+  }
+
+  header .links {
+    gap: 10px;
+  }
+  header .burger-icon {
+    display: block;
+  }
+
+  header .navbar {
+    display: none;
+  }
+  .hero {
+    padding: 14px 14px;
+    text-align: center;
+  }
+
+  .hero-info::before{
+    content: url(../img/public/line.svg);
+    position: absolute;
+  bottom: 270px; 
+   left:0px;
+  }
+
+  .hero .hero-info .row h1 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .hero .hero-info .row img{
+    width:40px;
+  }
+  
+  .hero .hero-info h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .hero .hero-info p {
+    font-size: 14px;
+  }
+
+ 
+}
