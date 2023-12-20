@@ -1,0 +1,627 @@
+
+
+
+
+/************************desktop**************************************/
+@media screen and (min-width: 1200px) and (max-width: 1496px) {
+  /* body {
+    background-color: teal;
+  } */
+  header {
+    font-size: 18px;
+  }
+
+  .container {
+    width: calc(100% - 324px);
+  }
+
+  header .logo {
+    width: 54px;
+  }
+
+  header .navbar-list .home {
+    padding: 14px 24px;
+  }
+
+  header .links .login {
+    padding: 14px 34px;
+  }
+
+  .hero {
+    padding: 0 55.5px;
+  }
+
+  .hero-info::before {
+    bottom: 260px;
+    left: 25px;
+  }
+
+  .slider .row {
+    padding: 30px 30px;
+  }
+  .slider .row img {
+    padding: 30px 70px;
+  }
+  .website-img {
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+
+  .benefits p,
+  .courses p,
+  .testimonials p {
+    font-size: 18px;
+  }
+
+  .benefits .benefits-info .row a,
+.courses .courses-info .row a,
+.testimonials .testimonials-info .row a {
+  font-size: 16px;
+}
+
+  .benefits .benefits-all {
+    gap: 80px;
+  }
+  .benefits .card {
+    width: calc((100% - 40px) / 3);
+    padding: 30px;
+    gap: 50px;
+  }
+
+  .benefits .card h3 {
+    font-size: 80px;
+  }
+  .benefits .card h4 {
+    font-size: 24px;
+  }
+
+  .courses .courses-all {
+    gap: 80px;
+  }
+
+  .courses .courses-all .row .course-card {
+    padding: 30px;
+  }
+  .courses .courses-all .row .courses-info{
+    gap: 30px;
+
+  }
+  .courses .courses-all .row .course-description {
+    gap: 14px;
+  }
+
+  .courses .courses-all .row .course-title h3 {
+    font-size: 18px;
+  }
+
+
+  .courses .courses-all .row .courses-info a {
+    font-size: 18px;
+    padding: 18px 0;
+    margin-bottom: 0;
+  }
+
+  .testimonials {
+    margin-top: 108px;
+  }
+  .testimonials h2 {
+    font-size: 48px;
+  }
+  .testimonials a{
+    font-size: 15px;
+
+  }
+
+  .testimonials .testimonials-all {
+    gap: 80px;
+  }
+
+  .testimonials .testimonials-all .testimonial-card p {
+    padding: 50px 50px;
+  }
+
+  .testimonials .testimonials-all .testimonial-card .testimonial-story {
+    padding: 30px 50px;
+  }
+}
+
+
+/******************************between desktop and mobile ***************************/
+@media screen and (min-width: 580px) and (max-width: 1024px) {
+  /* body {
+    background-color: red;
+  } */
+
+  .container {
+    width: calc(100% - 70px);
+  }
+
+  header {
+    margin-bottom: 55px;
+  }
+  header .row {
+    gap: 10px;
+  }
+
+  header .logo {
+    width: 40px;
+  }
+  header .navbar-list {
+    gap: 15px;
+  }
+  header .navbar-list .home {
+    padding: 10px 18px;
+  }
+
+  header .links {
+    gap: 10px;
+margin-left: auto;  }
+
+  .hero {
+    padding: 14px 14px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .hero-info::before {
+    bottom: 230px;
+    left: 0px;
+  }
+
+  .hero .hero-info .row h1 {
+    font-size: 30px;
+    width: fit-content;
+  }
+  .hero .hero-info .row img {
+    width: 40px;
+  }
+
+  .hero .hero-info h2 {
+    font-size: 24px;
+  }
+
+  .hero .hero-info p,
+  .benefits p,
+  .courses p,
+  .testimonials p {
+    font-size: 14px;
+  }
+  .website-img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .benefits .benefits-all {
+    gap: 40px;
+  }
+  .benefits .card {
+    width: calc((100% - 30px) / 2);
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .benefits .card h3 {
+    font-size: 50px;
+  }
+  .courses .courses-all {
+    gap: 40px;
+  }
+
+  .courses .courses-all .row .course-card {
+    padding: 24px;
+}
+  
+  .courses .courses-all .row .course-description {
+    gap: 14px;
+  }
+
+  .courses .courses-all .row .course-description .desc-links {
+    width: 100%;
+    justify-content: center;
+
+  }
+
+  .courses .courses-all .row  .course-description .desc-links a {
+    padding: 8px 10px;
+    font-size: 13.5px;
+  }
+  .courses .courses-all .row .course-description span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.courses .courses-all .row .course-title{
+  flex-grow: 1;
+}
+  .courses .courses-all .row .course-title h3 {
+    font-size: 16px;
+  }
+  .testimonials {
+    margin-top: 50px;
+  }
+  
+  .testimonials .testimonials-all {
+    gap: 40px;
+  }
+  .testimonials .testimonials-all .testimonial-card p {
+    padding: 30px 27px;
+  }
+
+  .testimonials .testimonials-all .testimonial-card .testimonial-story {
+    padding: 20px 30px;
+    gap: 10px;
+  }
+
+  .pricing-all {
+    gap: 40px;
+  }
+  .pricing-all .row {
+    gap: 20px;
+  }
+  .pricing-all .row:nth-of-type(2) {
+    padding: 20px 20px;
+    gap: 20px;
+
+  }
+  .pricing-all .row .pricing-details {
+    width: calc((100% - 20px) / 2);
+    padding: 30px 20px;
+  }
+
+
+
+  .pricing-all .row  .free-plan {
+    /*  h3 */
+    font-size: 16px;
+    padding: 22px 8px;
+  }
+
+  .pricing-all .row  .cost-info .cost {
+    font-size: 40px;
+  }
+  .pricing-all .row span {
+    font-size: 14px;
+  }
+
+  .pricing-all .row  .features-details {
+    padding: 0 0;
+  }
+
+  .pricing-all .row  .features-details h4 {
+    font-size: 13px;
+  }
+
+  
+
+  footer {
+    font-size: 16px; /******* except h3*****/
+    background: #fff;
+  }
+  footer .row {
+    gap: 24px;
+  }
+  footer .footer-info .row .start {
+    width: 100%;
+  }
+
+  footer .footer-info .row .end {
+    width: 100%;
+  }
+  footer .end .row .contact-info {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  footer .end .row .contact-info .row {
+    gap: 7px;
+  }
+}
+
+/**********************\to solve a problem in pricing cards***********************/
+
+@media screen and (min-width: 581px) and (max-width: 780px) {
+
+  .pricing-all .row .pricing-details {
+    width: calc(100%);
+    padding: 30px 20px;
+  }
+  
+}
+/************************mobile devices*******************************/
+@media screen and (max-width: 580px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+  /* body {
+    background-color: aqua;
+  } */
+
+  header {
+    margin-bottom: 51px;
+  }
+
+  header .row {
+    gap: 0px;
+  }
+
+  header .logo {
+    width: 30px;
+  }
+
+  header .links {
+    gap: 10px;
+  }
+  header .burger-icon {
+    display: block;
+  }
+  header .burger-icon img{
+    width: 22px;
+
+  }
+  header .navbar {
+    display: none;
+  }
+  .hero {
+    padding: 14px 14px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .hero-info::before {
+    bottom: 236px;
+    left: 0px;
+  }
+
+  .hero .hero-info .row h1 {
+    font-size: 16px;
+  }
+  .hero .hero-info .row img {
+    width: 40px;
+  }
+
+  .hero .hero-info h2 {
+    font-size: 24px;
+    width: fit-content;
+
+  }
+
+  .hero .hero-info p {
+    font-size: 14px;
+  }
+
+  .slider .row {
+    padding: 10px 10px;
+  }
+  .slider .row img {
+    padding: 20px 30px;
+  }
+  .website-img {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .benefits .benefits-info h2,
+  .courses .courses-info h2,
+  .testimonials .testimonials-info h2,
+  .pricing-all .pricing-info h2 {
+    font-size: 28px;
+  }
+  .benefits p,
+  .courses p,
+  .testimonials p,
+  .pricing p {
+    font-size: 14px;
+  }
+
+  .benefits .benefits-all {
+    gap: 40px;
+  }
+  .benefits .card {
+    width: fit-content;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .benefits .card h3 {
+    font-size: 50px;
+  }
+
+  .courses .courses-all {
+    gap: 40px;
+  }
+
+  .courses .courses-all .row .course-card {
+    padding: 24px;
+    width: calc(100%);
+  }
+
+  .courses .courses-all .row .course-description {
+    gap: 14px;
+  }
+
+ 
+
+  .courses .courses-all .row .course-title h3 {
+    font-size: 13px;
+  }
+
+  .testimonials {
+    margin-top: 50px;
+  }
+
+  .testimonials .testimonials-all {
+    gap: 40px;
+  }
+
+  .testimonials .testimonials-all .testimonial-card {
+    width: 100%;
+  }
+
+  .testimonials .testimonials-all .testimonial-card p {
+    padding: 30px 30px;
+  }
+
+  .testimonials .testimonials-all .testimonial-card .testimonial-story {
+    padding: 20px 30px;
+    gap: 10px;
+  }
+
+  .pricing-all {
+    gap: 40px;
+  }
+  .pricing-all .row {
+    gap: 20px;
+    justify-content: center;
+  }
+  .pricing-all .row:nth-of-type(2) {
+    padding: 20px 20px;
+  }
+  .pricing-all .row .pricing-details {
+    width: calc(100%);
+    padding: 30px 20px;
+  }
+
+  /* .pricing-all .row .pricing-plan {
+    gap: 30px;
+  } */
+
+  .pricing-all .row .free-plan {
+    /*  h3 */
+    font-size: 16px;
+    padding: 22px 8px;
+  }
+
+  .pricing-all .row  .cost-info .cost {
+    font-size: 50px;
+  }
+  .pricing-all .row  span {
+    font-size: 14px;
+  }
+
+  .pricing-all .row  .plan-features {
+    gap: 20px;
+  }
+
+  .pricing-all .row  .features-details {
+    padding: 0 0;
+  }
+
+
+  .pricing-all .row  .plan-features .available-features{
+    padding: 20px 20px 20px 20px;
+  }
+  .pricing-all .row  .features-details h4 {
+    font-size: 11.5px;
+  }
+
+  .pricing-all .row .pricing-details a {
+   
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px; /******* except h3*****/
+    background: #fff;
+    margin-top: 82px;
+    padding: 50px 0px 24px 0px;
+  }
+  footer .row {
+    gap: 24px;
+  }
+  footer .footer-info {
+    gap: 20px;
+  }
+  footer .footer-info .row .start {
+    gap: 30px;
+    width: 100%;
+  }
+
+  footer .footer-info .row .end {
+    width: 100%;
+  }
+
+  footer .end .row {
+    gap: 30px;
+  }
+
+  footer .end .row .contact-info {
+    width: calc((100% - 30px) / 2);
+  }
+  footer .end .row .contact-info:nth-child(3) {
+    width: 100%;
+  }
+}
+
+/****************************small mobile devices**************************************/
+@media screen and (min-width: 383px) and (max-width: 568px) {
+  .hero-info::before {
+    bottom: 260px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 383px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+  /* body {
+    background-color: aqua;
+  } */
+
+  header {
+    margin-bottom: 51px;
+  }
+
+  header .row {
+    gap: 0px;
+  }
+
+  header .logo {
+    width: 25px;
+  }
+
+  header .links {
+    gap: 10px;
+  }
+  header .burger-icon {
+    display: block;
+  }
+
+  header .navbar {
+    display: none;
+  }
+  .hero {
+    padding: 12px 12px;
+    text-align: center;
+  }
+
+  .hero-info::before {
+    bottom: 270px;
+    left: 0px;
+  }
+
+  .hero .hero-info .row h1 {
+    font-size: 14px;
+  }
+  .hero .hero-info .row img {
+    width: 40px;
+  }
+
+  .hero .hero-info h2 {
+    font-size: 20px;
+  }
+
+  .hero .hero-info p {
+    font-size: 14px;
+  }
+
+  .testimonials .testimonials-all .testimonial-card p {
+    padding: 25px 25px;
+  }
+
+  .testimonials .testimonials-all .testimonial-card .testimonial-story {
+    padding: 25px 20px;
+  }
+
+  .pricing-all .row  .plan-features .available-features{
+    padding: 10px 10px 10px 10px;
+  }
+
+}

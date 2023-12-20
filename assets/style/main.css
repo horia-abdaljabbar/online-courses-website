@@ -8,7 +8,7 @@
 
 body {
   font-family: "Be Vietnam Pro", sans-serif;
-  background-color: #f7f7f8;
+   background-color: #f7f7f8; 
 }
 
 .container {
@@ -148,6 +148,10 @@ header .links .login {
   padding: 12px 24px 12px 12px;
 }
 
+.hero .hero-info .row span {
+  color: #ff9500;
+}
+
 .hero .hero-info .row h1 {
   font-size: 36px;
   font-weight: 600;
@@ -204,7 +208,7 @@ header .links .login {
 
 .website-img {
   margin-top: 90px;
-  margin-bottom:86px;
+  margin-bottom: 86px;
 }
 
 .website-img img {
@@ -217,9 +221,19 @@ header .links .login {
   text-transform: capitalize;
 }
 
-.benefits p {
+.benefits p,
+.courses p,
+.testimonials p,
+.pricing p {
   text-transform: none;
   font-size: 16px;
+}
+
+.benefits p::first-letter,
+.courses p::first-letter,
+.testimonials p::first-letter,
+.pricing p::first-letter {
+  text-transform: capitalize;
 }
 
 .benefits .benefits-all {
@@ -227,20 +241,28 @@ header .links .login {
   flex-direction: column;
   gap: 60px;
 }
-.benefits .benefits-info h2 {
+.benefits .benefits-info h2,
+.courses .courses-info h2,
+.testimonials .testimonials-info h2,
+.pricing-all .pricing-info h2 {
   font-size: 600;
   font-size: 38px;
 }
 .benefits .benefits-all .row {
-  justify-content:space-between;
+  justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
 }
-.benefits .benefits-info .row p {
-  width: 940px;
+.benefits .benefits-info .row p,
+.courses .courses-info .row p,
+.testimonials .testimonials-info p,
+.pricing-all .pricing-info p {
+  width: 700px;
   color: #59595a;
 }
-.benefits .benefits-info .row a {
+.benefits .benefits-info .row a,
+.courses .courses-info .row a,
+.testimonials .testimonials-info .row a {
   display: flex;
   padding: 14px 20px;
   justify-content: center;
@@ -251,15 +273,17 @@ header .links .login {
   width: fit-content;
   text-transform: capitalize;
   color: #262626;
+  font-size: 14px;
 }
 .benefits .card {
-  padding: 40px ;
+  padding: 40px;
   width: calc((100% - 40px) / 3);
   display: flex;
   flex-direction: column;
   gap: 40px;
   border-radius: 10px;
   background: #fff;
+  align-self: stretch;
 }
 
 .benefits .card h3 {
@@ -280,10 +304,6 @@ header .links .login {
 }
 .benefits .card p {
   color: #4c4c4d;
-
-}
-.benefits .card p::first-letter {
-  text-transform: capitalize;
 }
 
 .benefits .card img {
@@ -294,311 +314,416 @@ header .links .login {
   background: #fcfcfd;
   box-sizing: content-box;
   align-self: flex-end;
+  margin-top: auto;
+}
+/******************************************courses**********************************/
+.courses {
+  margin-top: 100px;
+  text-transform: capitalize;
+  color: #262626;
+}
+
+.courses .courses-all {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.courses .courses-all .row {
+  gap: 20px;
+}
+.courses .courses-all .row .course-card {
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #f1f1f3;
+  background: #fff;
+  width: calc((100% - 20px) / 2);
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.courses .courses-all .row .course-card img {
+  width: 100%;
+}
+
+.courses .courses-all .row .course-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.courses .courses-all .row .course-description .desc-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap:10px;
+}
+.courses .courses-all .row .course-description .desc-links a {
+  color: #4c4c4d;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #f1f1f3;
+  background: #fff;
+}
+.courses .courses-all .row .course-description span {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.courses .courses-all .row .course-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.courses .courses-all .row .course-title h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.courses .courses-all .row .course-title p {
+  color: #4c4c4d;
+}
+
+.courses .courses-all .row .course-card a {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 14px 0;
+  color: #262626;
+  border-radius: 6px;
+  border: 1px solid #f1f1f3;
+  background: #f7f7f8;
+
+  margin-top: auto;
+}
+
+/**********************************testimonials******************************/
+.testimonials {
+  margin-top: 100px;
+  text-transform: capitalize;
+  color: #262626;
+}
+
+.testimonials a {
+  font-size: 14px;
+  font-weight: 500;
+}
+.testimonials .testimonials-all {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.testimonials .testimonials-all .row {
+  gap: 20px;
+}
+.testimonials .testimonials-all .testimonial-card {
+  width: calc((100% - 20px) / 2);
+  border-radius: 10px;
+  border: 1px solid #f1f1f3;
+  background: #fff;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials .testimonials-all .testimonial-card p {
+  padding: 40px 40px;
+  color: #4c4c4d;
+  text-transform: none;
+}
+
+.testimonials .testimonials-all .testimonial-card .testimonial-story {
+  padding: 24px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #fcfcfd;
+  border-top: 1px solid #f1f1f3;
+  margin-top: auto;
+}
+
+.testimonials .testimonials-all .testimonial-card .testimonial-profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  width: 137px;
+}
+
+.testimonials .testimonials-all .testimonial-profile .testimonial-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.testimonials .testimonials-all .testimonial-story .read-link {
+  padding: 14px 16px;
+  border-radius: 6px;
+  border: 1px solid #f1f1f3;
+  background: #f7f7f8;
+  color: #262626;
+}
+
+/******************************************pricing**********************************/
+
+.pricing {
+  margin-top: 100px;
+  text-transform: capitalize;
+  color: #262626;
+}
+
+.pricing-all {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.pricing-all .pricing-info p {
+  width: 600px;
+}
+.pricing-all .row:nth-of-type(2) {
+  padding: 50px 50px;
+  border-radius: 12px;
+  background: #fff;
+  gap: 30px;
+
+}
+
+.pricing-all .pricing-info .row .buttons {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 12px 12px;
+  border-radius: 8px;
+}
+
+.pricing-all .pricing-info .row .buttons button {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+.pricing-all .pricing-info .row .buttons .monthly-button {
+  color: #fff;
+  background-color: #ff9500;
+  border-radius: 6px;
+}
+
+.pricing-all .row .buttons .yearly-button {
+  background-color: #fff;
+  color: #4c4c4d;
+}
+
+.pricing-all .row .pricing-details {
+  width: calc((100% - 30px) / 2);
+  padding: 40px 24px 24px 24px;
+  border-radius: 12px;
+  border: 1px solid #f1f1f3;
+  background: #fcfcfd;
+  text-align: center;
+   display: flex;
+  flex-direction: column; 
+   justify-content: flex-start; 
+gap:24px;
+align-self: stretch;
+}
+.pricing-all .row .pricing-details .features-card{
+  display: flex;
+width: 100%;
+}
+
+.pricing-all .row  h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding:0 0 24px 0;
+}
+.pricing-all .row  .plan-name {
+  /*  h3 */
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 4px;
+  border: 1px solid #ffeacc;
+  background: #fff9f0;
+}
+.pricing-all .row  span {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+  color: #4c4c4d;
+}
+.pricing-all .row  .cost-info .cost {
+  font-size: 60px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.pricing-all .row  .plan-features {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px 14px 0px 0px;
+  border: 1px solid #f1f1f3;
+  background: #fff;
+}
+
+.pricing-all .row  .plan-features .available-features{
+  padding: 30px 40px 30px 40px;
+display: flex;
+flex-direction: column;
+justify-content: stretch;
+
+}
+
+.pricing-all .row  .features-details {
+  display: flex;
+  flex-direction: column;
+  color: #4c4c4d;
+  font-size: 14px;
+  /* padding: 0 30px; */
+  gap: 20px;
+}
+
+.pricing-all .row  .features-details .row {
+  padding: 12px 12px;
+  gap: 8px;
+  justify-content: flex-start;
+  border-radius: 6px;
+  border: 1px solid #f1f1f3;
+  flex-wrap: nowrap;
+  height: 50px;
 }
 
 
-/************************desktop**************************************/
-@media screen and (min-width: 1195px) and (max-width: 1496px) {
-  body {
-    background-color: teal;
-  }
-  header {
-    font-size: 18px;
-  }
-
-  .container {
-    width: calc(100% - 324px);
-  }
-
-  header .logo {
-    width: 54px;
-  }
-
-  header .navbar-list .home {
-    padding: 14px 24px;
-  }
-
-  header .links .login {
-    padding: 14px 34px;
-  }
-
-  .hero {
-    padding: 0 55.5px;
-  }
-
-  .hero-info::before {
-    content: url(../img/public/line.svg);
-    position: absolute;
-    bottom: 260px;
-    left: 25px;
-  }
-
-  .slider .row {
-    padding: 30px 30px;
-  }
-  .slider .row img {
-    padding: 30px 70px;
-  }
-  .website-img {
-    margin-top: 100px;
-    margin-bottom: 150px;
-  }
-
-  .benefits p {
-    font-size: 18px;
-  }
-
-  .benefits .benefits-all {
-    gap: 80px;
-  }
-  .benefits .card {
-    width: calc((100% - 40px) / 3);
-    padding: 30px;
-    gap:50px;
-  }
-
-  .benefits .card h3 {
-    font-size: 80px;
-  }
-  .benefits .card h4{
-    font-size: 24px;
-  }
+.pricing-all .row  .features-details img {
+  width: 20px;
+  align-self: flex-start;
+}
+.pricing-all .row  .features-details h4 {
+  color: #4c4c4d;
+  font-size: 14px;
+  text-align: left;  
 }
 
-/******************************others***************************/
-@media screen and (min-width: 581px) and (max-width: 1024px) {
-  body {
-    background-color: red;
-  }
-
-  .container {
-    width: calc(100% - 50px);
-  }
-
-  header {
-    margin-bottom: 55px;
-  }
-  header .row {
-    gap: 10px;
-  }
-
-  header .logo {
-    width: 40px;
-  }
-  header .navbar-list {
-    gap: 5px;
-  }
-  header .navbar-list .home {
-    padding: 10px 18px;
-  }
-
-  header .links {
-    gap: 10px;
-  }
-
-  .hero {
-    padding: 14px 14px;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  .hero-info::before {
-    content: url(../img/public/line.svg);
-    position: absolute;
-    bottom: 230px;
-    left: 0px;
-  }
-
-  .hero .hero-info .row h1 {
-    font-size: 20px;
-    font-weight: 600;
-  }
-  .hero .hero-info .row img {
-    width: 40px;
-  }
-
-  .hero .hero-info h2 {
-    font-size: 24px;
-    font-weight: 500;
-  }
-
-  .hero .hero-info p {
-    font-size: 14px;
-  }
-  .website-img {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  .benefits p {
-    font-size: 14px;
-  }
-
-  .benefits .benefits-all {
-    gap: 40px;
-  }
-  .benefits .card {
-    width: calc((100% - 30px) / 2);
-    padding: 30px;
-    gap:30px;
-  }
-
-  .benefits .card h3 {
-    font-size: 50px;
-  }
-}
-/************************mobile devices*******************************/
-@media screen and (max-width: 580px) {
-  .container {
-    width: calc(100% - 32px);
-  }
-  body {
-    background-color: aqua;
-  }
-
-  header {
-    margin-bottom: 51px;
-  }
-
-  header .row {
-    gap: 0px;
-  }
-
-  header .logo {
-    width: 25px;
-  }
-
-  header .links {
-    gap: 10px;
-  }
-  header .burger-icon {
-    display: block;
-  }
-
-  header .navbar {
-    display: none;
-  }
-  .hero {
-    padding: 14px 14px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .hero-info::before {
-    content: url(../img/public/line.svg);
-    position: absolute;
-    bottom: 236px;
-    left: 0px;
-  }
-
-  .hero .hero-info .row h1 {
-    font-size: 16px;
-    font-weight: 600;
-  }
-  .hero .hero-info .row img {
-    width: 40px;
-  }
-
-  .hero .hero-info h2 {
-    font-size: 24px;
-    font-weight: 500;
-  }
-
-  .hero .hero-info p {
-    font-size: 14px;
-  }
-
-  .slider .row {
-    padding: 10px 10px;
-  }
-  .slider .row img {
-    padding: 20px 30px;
-  }
-  .website-img {
-    margin-top: 10px;
-    margin-bottom: 50px;
-  }
-  .benefits p {
-    font-size: 14px;
-  }
-
-  .benefits .benefits-all {
-    gap: 40px;
-  }
-  .benefits .card {
-    width: fit-content;
-    padding: 30px;
-    gap:30px;
-  }
-
-  .benefits .card h3 {
-    font-size: 50px;
-  }
+.pricing-all .row .pricing-details a {
+  padding: 18px 54px;
+  border-radius: 0px 0px 8px 8px;
+  background: #ff9500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-@media screen and (min-width: 383px) and (max-width: 568px) {
-  .hero-info::before {
-    content: url(../img/public/line.svg);
-    position: absolute;
-    bottom: 260px;
-    left: 0px;
-  }
+/******************************************footer**********************************/
+footer {
+  text-transform: capitalize;
+  color: #262626;
+  font-size: 16px; /******* except h3*****/
+  background: #fff;
+  margin-top: 136px;
+  padding: 60px 0px 20px 0px;
 }
-@media screen and (max-width: 383px) {
-  .container {
-    width: calc(100% - 32px);
-  }
-  body {
-    background-color: aqua;
-  }
 
-  header {
-    margin-bottom: 51px;
-  }
+footer .footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
-  header .row {
-    gap: 0px;
-  }
+footer .footer-info .row .start {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: calc(100% * (1 / 3));
+}
 
-  header .logo {
-    width: 25px;
-  }
+footer .footer-info .row .start .email {
+  text-transform: lowercase;
+}
+footer .footer-info .row .start .website-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
 
-  header .links {
-    gap: 10px;
-  }
-  header .burger-icon {
-    display: block;
-  }
+footer .website-info .row {
+  justify-content: flex-start;
+  gap: 4px;
+}
+/* footer .footer-info .row .logo img{
+  width: 44px;
+} */
 
-  header .navbar {
-    display: none;
-  }
-  .hero {
-    padding: 14px 14px;
-    text-align: center;
-  }
+footer .footer-info .row .start a {
+  color: #262626;
+}
 
-  .hero-info::before {
-    content: url(../img/public/line.svg);
-    position: absolute;
-    bottom: 270px;
-    left: 0px;
-  }
+footer .footer-info .row .end {
+  /* flex-grow: 1; */
+  align-self: stretch;
+  flex-grow: 1;
+}
 
-  .hero .hero-info .row h1 {
-    font-size: 13px;
-    font-weight: 600;
-  }
-  .hero .hero-info .row img {
-    width: 40px;
-  }
+footer .footer-info .row .end h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+footer .footer-info .row .end a {
+  color: #59595a;
+}
 
-  .hero .hero-info h2 {
-    font-size: 20px;
-    font-weight: 500;
-  }
+footer .end .row {
+  gap: 24px;
+}
 
-  .hero .hero-info p {
-    font-size: 14px;
-  }
+footer .end .row .contact-info {
+  width: calc((100% - 48px) / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: stretch;
+}
+
+footer .end .row .contact-info nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .end .row .contact-info .row {
+  gap: 14px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .end .row .contact-info .row a {
+  padding: 12px 12px;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #f1f1f3;
+}
+
+footer .footer-info .line {
+  height: 2px;
+  background: #f1f1f3;
+}
+
+footer .footer-info .copy-right {
+  color: #656567;
+  text-align: center;
+  font-size: 14px;
 }
