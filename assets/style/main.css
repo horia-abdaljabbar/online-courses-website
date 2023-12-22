@@ -453,11 +453,11 @@ header .links .login {
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
-  width: 140px;
+  width: 137px;
 }
 
 .testimonials .testimonials-all .testimonial-profile .testimonial-name {
-  font-size: 15.5px;
+  font-size: 15px;
   font-weight: 600;
 }
 
